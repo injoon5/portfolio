@@ -21,6 +21,19 @@
   line-height: 1.65;
 }
 
+.notion-page-title {
+  align-items: left;
+}
+
+.notion-page-title-icon {
+  align-items: left;
+  align-items: left;
+}
+
+.notion-page-icon {
+  align-items: left;
+}
+
 .index-page {
   --notion-max-width: 900px;
 }
@@ -48,7 +61,14 @@
   margin: 0 auto;
 }
 
+.notion-nav-header-lhs {
+  font-size: 1.5em;
+
+}
+
 .notion-nav-header-rhs {
+  font-size: 1.5em;
+  font-weight: 400;
   gap: 0.5rem;
 }
 
@@ -76,8 +96,19 @@
   font-size: 14px;
 }
 
+
+.notion-collection-header {
+  padding: 6px 4px;
+  padding-bottom: 20px;
+}
+
+.notion-collection-header-title {
+  font-size: 1.8em;
+}
+
 .notion-collection-card {
-  border-radius: 16px;
+  padding: 10px;
+  border-radius: 24px;
   box-shadow: none;
 }
 
@@ -167,20 +198,30 @@
 
 .notion-title {
   display: block;
-  text-align: center;
+  text-align: left;
+}
+
+.notion-collection-header {
+  display: none;
 }
 
 .notion-collection-row {
   padding-bottom: 1em;
+  justify-content: left;
 }
 
 .notion-collection-page-properties .notion-collection-column-title {
   display: none;
 }
 
+.notion-collection-row {
+  display: flex;
+  justify-content: left;
+}
+
 .notion-collection-row-property .notion-property {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .notion-collection-row-value {
@@ -348,6 +389,7 @@
 
 /* if you don't want rounded page icon images, remove this */
 .notion-page-icon-hero.notion-page-icon-image {
+  justify-content: left;
   border-radius: 50%;
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
 }

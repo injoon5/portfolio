@@ -78,7 +78,8 @@ export const PageHead: React.FC<
         href={rssFeedUrl}
         title={site?.name}
       />
-
+      <link rel="preconnect" href="https://rsms.me/"/>
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
